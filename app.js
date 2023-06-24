@@ -12,12 +12,12 @@ function calcAge(a, b = 2023) {
 }
 alert("Task2. Ваш вік - " + calcAge(year));
 /*----------------------------------------------------------------------------*/
-let Name = prompt("Task1. Введіть Ваше імя: ");
-let year1 = +prompt("Task2. Введіть рік народження: ");
+let Name = prompt("Task3. Введіть Ваше імя: ");
+let year1 = +prompt("Task3. Введіть рік народження: ");
 
 function yearUntilPens(a, b, c = 2023) {
-  let d = 60 - (2023 - a);
-  if (d > 60) return "Пан " + b + "вже на пенсії";
-  else return "Пан " + b + " вийде на песіон через" + d + " років";
+  let d = +c - +a;
+  if (d > 60) return "Пан " + b + " вже на пенсії";
+  else return "Пан " + b + " вийде на песіон через " + (60 - +d) + " років";
 }
 alert(yearUntilPens(year1, Name));
