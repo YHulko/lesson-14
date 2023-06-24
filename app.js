@@ -17,7 +17,7 @@ let year1 = +prompt("Task3. Введіть рік народження: ");
 
 function yearUntilPens(a, b, c = 2023) {
   let d = +c - +a;
-  if (d > 60) return "Пан " + b + " вже на пенсії";
+  if (+d > 60) return "Пан " + b + " вже на пенсії";
   else return "Пан " + b + " вийде на песіон через " + (60 - +d) + " років";
 }
 alert(yearUntilPens(year1, Name));
